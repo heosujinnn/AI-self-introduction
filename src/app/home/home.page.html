@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      허피티의 AI 자기소개서
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>AI 자기소개서</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">지원하는 회사</ion-label>
+        <ion-input [(ngModel)]="company"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">지원 직무</ion-label>
+        <ion-input [(ngModel)]="position"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">예상 질문</ion-label>
+        <ion-input [(ngModel)]="question"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">경험</ion-label>
+        <ion-input [(ngModel)]="experience"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Max Length</ion-label>
+        <ion-input type="number" [(ngModel)]="maxLength"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Temperature</ion-label>
+        <ion-input type="number" [(ngModel)]="temperature"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Max Tokens</ion-label>
+        <ion-input type="number" [(ngModel)]="maxTokens"></ion-input>
+      </ion-item>
+
+      <ion-button expand="full" (click)="getResponse()">Get Response</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Response</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-textarea readonly rows="10" [(ngModel)]="response" style="height: 300px;"></ion-textarea>
+    </ion-card-content>
+  </ion-card>
+<ion-button expand="full" (click)="addToDatabase()">저장하기</ion-button>
+<ion-button expand="full" (click)="goToBoard()">게시판으로 가기</ion-button>
+
+</ion-content>
+
+
+

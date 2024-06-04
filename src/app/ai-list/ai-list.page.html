@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="header-title">허수진 AI 자기소개서</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="main" text-center>
+  <div class="title"></div>
+  <div class="list-header">리스트</div>
+  
+  <ion-list id="list" class="list">
+    <ion-item *ngFor="let item of data" class="item-text">
+      <ion-label class="item-label">
+        <span class="item-company">[{{item.company}}]</span>
+        <span class="item-position">[{{item.position}}]</span>
+        <span class="item-question">[{{item.question}}]</span>
+        <span class="item-experience">[{{item.experience}}]</span>
+        <span class="item-response">[{{item.response}}]</span>
+        <ion-button type="button" id="button" class="button" (click)="deleteItem(item.id)" color="danger">삭제</ion-button>
+      </ion-label>
+    </ion-item>      
+  </ion-list>
+  
+  <ion-button type='button' id='button' class='button' (click)="goToMenuPage()" expand="full">확인하기</ion-button>
+</ion-content>

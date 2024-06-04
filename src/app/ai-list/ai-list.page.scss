@@ -1,0 +1,59 @@
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 20px; /* 위쪽 여백 */
+  justify-content: center;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.list-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; /* 텍스트 가운데 정렬 */
+   justify-content: center;
+}
+
+
+.item-text {
+  padding: 10px;
+}
+
+.item-label {
+  display: inline-block;
+  width: 95%;
+}
+
+.item-company,
+.item-position,
+.item-question,
+.item-experience,
+.item-response,
+.button{
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+  justify-content: center;
+}
+
+.item-response {
+  display: block;
+  margin-bottom: 5px;
+  border: 1px solid #ccc; /* 테두리 추가 */
+  padding: 5px; /* 내부 여백 */
+}
+
+
+.button {
+  margin-top: 20px;
+}
